@@ -36,7 +36,7 @@ router.get("/api/workouts/range", (req, res) => {
         res.status(400).json(err);
     })
 })
-
+/* 
 router.put("/api/workouts/:id", ({body, params},res)=>{
     const id = params.id;
     let savedExercises = [];
@@ -47,8 +47,17 @@ router.put("/api/workouts/:id", ({body, params},res)=>{
         res.json(savedExercises);
         let allExercises = [...savedExercises, body];
         updateWorkout(allExercises);
-    })
-})
+    }).catch(err => {
+        res.json(err);
+    });
+    function updateWorkout(exercises){
+        db.Workout.findByIdAndUpdate(id, {exercises: exercises}, function(err, doc){
+            if(err){
+                console.log(err)
+            }
+        })
+    }
+}); */
 
 
-module.exports = router
+module.exports = router;
