@@ -17,8 +17,8 @@ The user should be able to:
   * View the total duration of each workout from the past seven workouts on the `stats` page.
 
 
-<img src="images/fitness2.png" width="300"/>
-<img src="images/fitness1.png" width="300"/>
+<img src="images/fitness01.png" width="300"/>
+<img src="images/fitness02.png" width="300"/>
 
 ## Business Context
 
